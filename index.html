@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sasmitha Sudusinghe — Backend Engineer & Web Developer</title>
+  <meta name="description" content="Portfolio of Sasmitha Sudusinghe — backend engineer and IT undergraduate at University of Vavuniya, Sri Lanka. Building with TypeScript, Node.js, React, and more." />
+  <meta name="keywords" content="Sasmitha Sudusinghe, web developer, IT undergraduate, portfolio, University of Vavuniya" />
+  <meta property="og:title" content="Sasmitha Sudusinghe — Web Developer" />
+  <meta property="og:description" content="Passionate IT undergraduate crafting beautiful digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">SS<span class="accent-dot">.</span></div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#education" class="nav-link" id="nav-education">Education</a>
+        <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+        <a href="#projects" class="nav-link" id="nav-projects">Work</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+      </div>
+      <div class="theme-toggle" id="theme-toggle" role="button" aria-label="Toggle theme" tabindex="0">
+        <div class="theme-toggle-track">
+          <span class="theme-icon sun-icon"><i class="fas fa-sun"></i></span>
+          <span class="theme-icon moon-icon"><i class="fas fa-moon"></i></span>
+          <div class="theme-toggle-thumb"></div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image-col">
+        <div class="profile-ring-wrapper">
+          <div class="profile-ring"></div>
+          <img src="assets/img/profile.jpg" alt="Sasmitha Sudusinghe — Web Developer" class="profile-img" id="profile-photo" />
+        </div>
+      </div>
+      <div class="hero-content-col">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Sasmitha<br /><span class="accent">Sudusinghe</span></h1>
+        <p class="hero-role">Backend Engineer <span class="role-divider">·</span> IT Undergraduate</p>
+        <div class="hero-typewriter">
+          <span class="typewriter-text" id="typewriter"></span><span class="cursor-blink">|</span>
+        </div>
+        <div class="hero-location-badge">
+          <span class="loc-dot"></span>
+          <span>Colombo, LK</span>
+          <span class="available-badge">● Available</span>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-badge">
+            <span class="stat-number">3<span class="accent">rd</span></span>
+            <span class="stat-label">Year Student</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-number">4<span class="accent">+</span></span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-number">9<span class="accent">+</span></span>
+            <span class="stat-label">Tech Skills</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="cta-view-work">View My Work</a>
+          <a href="https://github.com/sasmitha-sudusinghe" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="cta-github"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-tag">WHO I AM</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text-col">
+          <p class="about-bio">
+            Hello! I'm Sasmitha Sudusinghe, a passionate undergraduate (3rd year) pursuing a 
+            <strong>Bachelor of Science in Information Technology</strong> at the 
+            <strong>University of Vavuniya (UOV)</strong>.
+          </p>
+          <p class="about-bio">
+            I'm a backend engineer at heart — I love building scalable systems, clean APIs, and full-stack 
+            products that solve real problems. From TypeScript and Node.js on the backend to React on the 
+            front, I enjoy the full journey of shipping code that matters.
+          </p>
+          <p class="about-bio">
+            Open to <strong>freelance work</strong>, collaborations, and building things together.
+          </p>
+          <div class="about-stack">
+            <p class="stack-label">// tech stack</p>
+            <div class="stack-lines">
+              <span class="stack-line"><i class="fas fa-circle accent" style="font-size:0.4rem"></i> TypeScript · Python · Go</span>
+              <span class="stack-line"><i class="fas fa-circle accent" style="font-size:0.4rem"></i> React · Node · Postgres</span>
+              <span class="stack-line"><i class="fas fa-circle accent" style="font-size:0.4rem"></i> AWS · Docker · CI/CD</span>
+            </div>
+          </div>
+          <div class="about-chips">
+            <span class="chip">🎯 Problem Solver</span>
+            <span class="chip">🚀 Fast Learner</span>
+            <span class="chip">💡 Creative Thinker</span>
+            <span class="chip">🤝 Team Player</span>
+            <span class="chip">⚡ Detail Oriented</span>
+          </div>
+        </div>
+        <div class="about-cards-col">
+          <div class="about-card glass-card">
+            <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h4>BSc in IT</h4>
+              <p>University of Vavuniya</p>
+            </div>
+          </div>
+          <div class="about-card glass-card">
+            <div class="about-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Sri Lanka 🇱🇰</p>
+            </div>
+          </div>
+          <div class="about-card glass-card">
+            <div class="about-card-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <h4>Focus</h4>
+              <p>Web Development</p>
+            </div>
+          </div>
+          <div class="about-card glass-card">
+            <div class="about-card-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <h4>Passion</h4>
+              <p>Building Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section education-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-tag">MY ACADEMIC PATH</p>
+        <h2 class="section-title">Education & <span class="accent">Qualifications</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-card-header">
+              <div class="timeline-icon"><i class="fas fa-university"></i></div>
+              <div class="timeline-badge ongoing">Ongoing</div>
+            </div>
+            <h3 class="timeline-title">BSc (Hons) in Information Technology</h3>
+            <p class="timeline-institution"><i class="fas fa-building"></i> University of Vavuniya (UOV)</p>
+            <p class="timeline-period"><i class="fas fa-calendar-alt"></i> 2023 — Present · 3rd Year</p>
+            <p class="timeline-desc">Pursuing a comprehensive IT degree covering software engineering, database management, networking, web development, and system analysis.</p>
+            <div class="timeline-tags">
+              <span class="tag">Software Engineering</span>
+              <span class="tag">Database</span>
+              <span class="tag">Networking</span>
+              <span class="tag">Web Dev</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-card-header">
+              <div class="timeline-icon"><i class="fas fa-school"></i></div>
+              <div class="timeline-badge completed">Completed</div>
+            </div>
+            <h3 class="timeline-title">Advanced Level (A/L) — Maths Stream</h3>
+            <p class="timeline-institution"><i class="fas fa-building"></i> G/Neluwa National School</p>
+            <p class="timeline-period"><i class="fas fa-calendar-alt"></i> 2020 — 2022</p>
+            <p class="timeline-desc">Studied Combined Mathematics, Physics, and ICT, building a strong analytical and technical foundation that drives my passion for technology.</p>
+            <div class="timeline-tags">
+              <span class="tag">Mathematics</span>
+              <span class="tag">Physics</span>
+              <span class="tag">ICT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-tag">WHAT I KNOW</p>
+        <h2 class="section-title">Tech <span class="accent">Arsenal</span></h2>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Frontend -->
+        <div class="skill-category glass-card" data-animate>
+          <h3 class="skill-cat-title"><i class="fas fa-laptop-code accent"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-react react-color"></i> React</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-html5 html-color"></i> HTML / CSS</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Languages -->
+        <div class="skill-category glass-card" data-animate>
+          <h3 class="skill-cat-title"><i class="fas fa-server accent"></i> Backend & Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-code ts-color"></i> TypeScript</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-node-js node-color"></i> Node.js</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-python py-color"></i> Python</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-code go-color"></i> Go</span>
+                <span class="skill-pct">55%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category glass-card" data-animate>
+          <h3 class="skill-cat-title"><i class="fas fa-database accent"></i> Database</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-database pg-color"></i> PostgreSQL</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-leaf mongo-color"></i> MongoDB</span>
+                <span class="skill-pct">68%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-database mysql-color"></i> MySQL</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div class="skill-category glass-card" data-animate>
+          <h3 class="skill-cat-title"><i class="fas fa-tools accent"></i> DevOps & Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-aws aws-color"></i> AWS</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-docker docker-color"></i> Docker</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fab fa-git-alt git-color"></i> Git / GitHub</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Badges Row -->
+      <div class="tech-badges" data-animate>
+        <span class="tech-badge"><i class="fas fa-code"></i> TypeScript</span>
+        <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="tech-badge"><i class="fas fa-code"></i> Go</span>
+        <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+        <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+        <span class="tech-badge"><i class="fas fa-database"></i> Postgres</span>
+        <span class="tech-badge"><i class="fab fa-aws"></i> AWS</span>
+        <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+        <span class="tech-badge"><i class="fas fa-infinity"></i> CI/CD</span>
+        <span class="tech-badge"><i class="fab fa-git-alt"></i> Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-tag">WHAT I'VE BUILT</p>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: MindTrack -->
+        <div class="project-card glass-card" id="project-mindtrack" data-animate>
+          <div class="project-card-header">
+            <div class="project-icon">🧠</div>
+            <div class="project-status-badge status-dev">2026 · In Development</div>
+          </div>
+          <h3 class="project-title">Mindtrack</h3>
+          <p class="project-subtitle">Student Mental Wellness Tracker</p>
+          <p class="project-desc">
+            University students face significant mental health challenges — exam stress, loneliness, burnout — 
+            but have no simple, anonymous way to track and reflect on their daily wellbeing. MindTrack provides 
+            early self-awareness through mood tracking so students can seek help before it gets serious.
+          </p>
+          <div class="project-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sasmitha-sudusinghe/mindtrack" target="_blank" rel="noopener noreferrer" class="project-link" id="mindtrack-github"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <!-- Project 2: Skillfolio -->
+        <div class="project-card glass-card featured" id="project-skillfolio" data-animate>
+          <div class="project-card-header">
+            <div class="project-icon">📊</div>
+            <div class="project-status-badge status-ready">2025 · Ready to Deploy</div>
+          </div>
+          <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+          <h3 class="project-title">Skillfolio</h3>
+          <p class="project-subtitle">Skill & Project Tracker for Students</p>
+          <p class="project-desc">
+            A web app where students log projects they're building, tag the skills/tech used, and track learning goals — 
+            think "GitHub contributions graph" but for skills, with a public profile page. It's relatable (literally 
+            built to solve the job portfolio problem), which makes for a great "why I built this" story in interviews. 
+            Work is finished and ready to deploy.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">FastAPI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sasmitha-sudusinghe/Skillfolio" target="_blank" rel="noopener noreferrer" class="project-link" id="skillfolio-github"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <!-- Project 3: ChronosDo -->
+        <div class="project-card glass-card" id="project-chronosdo" data-animate>
+          <div class="project-card-header">
+            <div class="project-icon">⏱️</div>
+            <div class="project-status-badge status-maintenance">2025 · Under Maintenance</div>
+          </div>
+          <h3 class="project-title">ChronosDo</h3>
+          <p class="project-subtitle">Notion-Style Day Tracker & To-Do App</p>
+          <p class="project-desc">
+            A sleek, Notion-style day tracker and to-do web app built for seamless daily focus. 
+            Minimalist block layout with light/dark theme toggles, task &amp; habit management with 
+            auto-calculated progress, and privacy-first localStorage architecture. 
+            Lightweight single-file architecture — pure HTML, CSS, and JS.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sasmitha-sudusinghe" target="_blank" rel="noopener noreferrer" class="project-link" id="chronosdo-github"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <!-- Project 4: Questline -->
+        <div class="project-card glass-card" id="project-questline" data-animate>
+          <div class="project-card-header">
+            <div class="project-icon">⚔️</div>
+            <div class="project-status-badge status-dev">2025 · In Development</div>
+          </div>
+          <h3 class="project-title">Questline</h3>
+          <p class="project-subtitle">Gamified Habit Tracker</p>
+          <p class="project-desc">
+            A gamified habit tracker that turns daily goals into real-life quests. Built with React, 
+            Node.js/Express, and MongoDB — users create and complete quests, earn XP, level up, and 
+            track streaks with full CRUD functionality and JWT-based auth. 
+            Because self-improvement should feel like an adventure.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">JWT Auth</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sasmitha-sudusinghe" target="_blank" rel="noopener noreferrer" class="project-link" id="questline-github"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <p class="section-subtitle">Open to freelance work, collaborations, and building things together.</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info-col">
+          <div class="contact-card glass-card" id="contact-email-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:sasmithasudusinghe@gmail.com" id="contact-email-link">sasmithasudusinghe@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card" id="contact-location-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Colombo, Sri Lanka 🇱🇰</p>
+            </div>
+          </div>
+          <div class="contact-card glass-card" id="contact-uni-card">
+            <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h4>University</h4>
+              <p>University of Vavuniya (UOV)</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/sasmitha-sudusinghe" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sasmitha-sudusinghe-00a456290" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="contact-submit">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">SS<span class="accent-dot">.</span></div>
+      <p class="footer-text">© 2026 Sasmitha Sudusinghe. All rights reserved.</p>
+      <p class="footer-sub">Built with <span class="accent">♥</span> using HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollToTopBtn" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
